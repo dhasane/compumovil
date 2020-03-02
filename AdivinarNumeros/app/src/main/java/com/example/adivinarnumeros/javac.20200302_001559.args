@@ -1,0 +1,8 @@
+-Xlint
+-cp
+"Downloading https://services.gradle.org/distributions/gradle-5.6.4-all.zip:.....................................................................................................................................:Unzipping /home/dhas/.gradle/wrapper/dists/gradle-5.6.4-all/ankdp27end7byghfw1q2sw75f/gradle-5.6.4-all.zip to /home/dhas/.gradle/wrapper/dists/gradle-5.6.4-all/ankdp27end7byghfw1q2sw75f:Set executable permissions for: /home/dhas/.gradle/wrapper/dists/gradle-5.6.4-all/ankdp27end7byghfw1q2sw75f/gradle-5.6.4/bin/gradle"
+-sourcepath
+/home/dhas/AndroidStudioProjects/AdivinarNumeros/app/src/main/java/
+-d
+/tmp/nvimqENqOH/5
+/tmp/nvimqENqOH/6/MainActivity.java

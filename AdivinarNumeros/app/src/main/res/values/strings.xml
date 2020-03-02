@@ -1,12 +1,24 @@
 <resources>
     <string name="app_name">AdivinarNumeros</string>
     <string name="title_activity_main2">Main2Activity</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
+    <string name="numero_secreto">numero secreto es: </string>
+    <string name="adivina_rango">adivina un numero entre 0 y </string>
+    <string name="adivina_encontrado">felicidades, has encontrado el numero secreto</string>
+    <string name="adivina_encontrado_hint">Tu numero es el correcto</string>
+    <string name="adivina_equivocacion_toast"> MAAAAAL </string>
+    <string name="tu_numero_es">tu numero es: </string>
+    <string name="mayor">mayor </string>
+    <string name="menor">menor </string>
+    <string name="numero_intentos">Numero de intentos: </string>
+    <string name="nombre_pais">Numero de intentos: </string>
+    <string name="capital">Capital </string>
+    <string name="sigla">Sigla </string>
+    <string name="nombre_internacional">Nombre Internacional </string>
+    <string name="vac"></string>
+    <string name="hint">Hint</string>
+    <string name="verifica">Verifica!</string>
+    <string name="toast_correcion">por favor ingresar un numero valido</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+
 </resources>

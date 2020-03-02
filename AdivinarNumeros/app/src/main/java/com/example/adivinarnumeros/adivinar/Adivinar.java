@@ -32,10 +32,12 @@ public class Adivinar extends AppCompatActivity {
         int superior = getIntent().getIntExtra("rango_superior", 51);
         rndNumber = (new Random() ).nextInt(superior);
 
-        ((TextView) findViewById(R.id.textView2)).setText("el numero secreto es: " + rndNumber );
-        ((EditText) findViewById(R.id.editText)).setHint("adivina un numero entre 0 y " + superior );
+        ((TextView) findViewById(R.id.textView2)).setText(R.string.numero_secreto + rndNumber);
+        ((EditText) findViewById(R.id.editText)).setHint(R.string.adivina_rango + superior);
 
         num_intentos = 0;
+        ( (TextView) findViewById(R.id.textViewIntentos))
+                .setText( R.string.numero_intentos + num_intentos );
 
         et = findViewById(R.id.editText);
 
@@ -49,18 +51,18 @@ public class Adivinar extends AppCompatActivity {
                 if (rndNumber== input_int )
                 {
                     Toast.makeText(v.getContext(),
-                            "felicidades, has encontrado el numero secreto", Toast.LENGTH_LONG).show();
-                    ( (TextView) findViewById(R.id.hintText)).setText( "Tu numero es el correcto" );
+                            R.string.adivina_encontrado, Toast.LENGTH_LONG).show();
+                    ( (TextView) findViewById(R.id.hintText)).setText( R.string.adivina_encontrado_hint );
                 }
                 else
                 {
-                    Toast.makeText(v.getContext(), "MAAAAAL", Toast.LENGTH_LONG).show();
+                    Toast.makeText(v.getContext(), R.string.adivina_equivocacion_toast, Toast.LENGTH_LONG).show();
                     ( (TextView) findViewById(R.id.hintText))
-                            .setText( "Tu numero es " + (rndNumber>input_int? "menor" : "mayor") );
+                            .setText( R.string.tu_numero_es + (rndNumber>input_int? R.string.menor : R.string.mayor) );
                     num_intentos ++;
 
                     ( (TextView) findViewById(R.id.textViewIntentos))
-                            .setText( "Numero de intentos: " + num_intentos );
+                            .setText( R.string.numero_intentos + num_intentos );
 
                     ( (LinearLayout) findViewById(R.id.internalLinearLayout))
                             .addView( createTV( "" + input_int ) );

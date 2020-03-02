@@ -25,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
                     public void onClick(View v) {
 
                         String str = ( (EditText) findViewById(R.id.mainInputText)).getText().toString()  ;
-                        System.out.println("el valor es: " + str);
 
                         if ( !str.isEmpty() )
                         {
@@ -36,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
                         else
                         {
                             Toast.makeText(v.getContext(),
-                                    "por favor ingresar un numero valido", Toast.LENGTH_LONG).show();
+                                    R.string.toast_correcion, Toast.LENGTH_LONG).show();
                         }
 
 
