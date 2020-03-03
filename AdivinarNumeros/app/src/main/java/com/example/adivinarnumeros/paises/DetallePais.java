@@ -19,16 +19,16 @@ public class DetallePais extends AppCompatActivity {
 
         Bundle b = getIntent().getBundleExtra("bundle");
 
+        String nom = b.getString( "nom_int", "");
+
         ((TextView) findViewById(R.id.detalleNombrePais))
-                .setText( b.getString("nombre", "") );
+                .setText( b.getString( "nombre", "") );
         ((TextView) findViewById(R.id.detalleCapital))
                 .setText( b.getString("capital", "") );
         ((TextView) findViewById(R.id.detalleNomInt))
-                .setText( b.getString("nom_int", "") );
+                .setText( nom );
         ((TextView) findViewById(R.id.detalleSigla))
                 .setText( b.getString("sigla", "") );
-
-        String nom  = b.getString( "nombre", "mundo");
 
         ((ImageView) findViewById(R.id.imagenDetallePais))
                 .setImageResource(
