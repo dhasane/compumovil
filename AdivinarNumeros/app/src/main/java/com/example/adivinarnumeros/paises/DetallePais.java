@@ -2,7 +2,10 @@ package com.example.adivinarnumeros.paises;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.adivinarnumeros.R;
@@ -14,7 +17,6 @@ public class DetallePais extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detalle);
 
-        // Pais p = getIntent().get
         Bundle b = getIntent().getBundleExtra("bundle");
 
         ((TextView) findViewById(R.id.detalleNombrePais))
@@ -25,5 +27,16 @@ public class DetallePais extends AppCompatActivity {
                 .setText( b.getString("nom_int", "") );
         ((TextView) findViewById(R.id.detalleSigla))
                 .setText( b.getString("sigla", "") );
+
+        String nom  = b.getString( "nombre", "mundo");
+
+        ((ImageView) findViewById(R.id.imagenDetallePais))
+                .setImageResource(
+                        getResources().getIdentifier(
+                                nom.toLowerCase(),
+                                "drawable",
+                                getPackageName()
+                                )
+                );
     }
 }

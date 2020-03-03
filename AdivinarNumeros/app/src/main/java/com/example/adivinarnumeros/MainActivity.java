@@ -23,9 +23,7 @@ public class MainActivity extends AppCompatActivity {
                 .setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-
                         String str = ( (EditText) findViewById(R.id.mainInputText)).getText().toString()  ;
-
                         if ( !str.isEmpty() )
                         {
                             Intent adivinar = new Intent( getBaseContext(), Adivinar.class);
@@ -37,8 +35,6 @@ public class MainActivity extends AppCompatActivity {
                             Toast.makeText(v.getContext(),
                                     R.string.toast_correcion, Toast.LENGTH_LONG).show();
                         }
-
-
                     }
                 });
 
