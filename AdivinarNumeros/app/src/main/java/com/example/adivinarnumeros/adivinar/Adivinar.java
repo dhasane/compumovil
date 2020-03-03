@@ -29,9 +29,9 @@ public class Adivinar extends AppCompatActivity {
         rndNumber = (new Random() ).nextInt(superior);
 
         ((TextView) findViewById(R.id.textView2))
-                .setText(getString(R.string.adivina_rango) + Integer.toString(superior));
+                .setText(getString(R.string.adivina_rango) + " " + Integer.toString(superior));
         ((EditText) findViewById(R.id.editText))
-                .setHint(getString(R.string.adivina_rango) + Integer.toString(superior));
+                .setHint(getString(R.string.adivina_rango) + " " + Integer.toString(superior));
 
         System.out.println("el numero es : " +rndNumber);
         num_intentos = 0;
