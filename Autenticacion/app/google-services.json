@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "378281161518",
+    "firebase_url": "https://autenticacion-ea619.firebaseio.com",
+    "project_id": "autenticacion-ea619",
+    "storage_bucket": "autenticacion-ea619.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:378281161518:android:818d69b7c5e951e2ca80bf",
+        "android_client_info": {
+          "package_name": "com.example.autenticacion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "378281161518-b7c5plvr68usriaij0f4ploag1g2f9nu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDW18AE508FHwZ89xhxtCuQ6JZqa1e66xc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "378281161518-b7c5plvr68usriaij0f4ploag1g2f9nu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
