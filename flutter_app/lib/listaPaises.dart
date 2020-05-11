@@ -68,7 +68,10 @@ class ListaPaisesState extends State<ListaPaises> {
           } else if (snapshot.hasError) {
             return Text("${snapshot.error}");
           }
-          return CircularProgressIndicator();
+          return Center(
+            child:
+              CircularProgressIndicator()
+          );
         },
       )
     );

@@ -13,14 +13,12 @@ class mapView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Size screenSize = MediaQuery.of(context).size;
-    double heigh = screenSize.height;
-    TextStyle whiteStyle = new TextStyle(fontSize: 20.0, color: Colors.white);
     return new Directionality(
       textDirection: TextDirection.rtl,
       child: new Container(
           padding: new EdgeInsets.only(bottom: 10.0, left: 1.0, right: 1.0),
           color: Colors.white,
+
           child: new FlutterMap(
             options: new MapOptions(
                 center: new LatLng(pais.getLatlng[0], pais.getLatlng[1]),
@@ -33,11 +31,19 @@ class mapView extends StatelessWidget {
                   urlTemplate:
                       "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                   subdomains: ['a', 'b', 'c']),
-//              new MarkerLayerOptions(markers: markers)
+              new MarkerLayerOptions(
+                markers: [
+                  new Marker(
+                    width: 80.0,
+                    height: 80.0,
+                    point: new LatLng(pais.getLatlng[0], pais.getLatlng[1]),
+                    builder: (ctx) => Icon(Icons.trip_origin)
+                  ),
+                ],
+              ),
             ],
           )
       )
     );
   }
 }
-

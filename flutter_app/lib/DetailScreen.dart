@@ -57,7 +57,7 @@ class DetailScreen extends StatelessWidget {
                 ),
                 showInfo( 'Capital' , pais.getCapital),
                 showInfo( 'Poblacion' , pais.getPolacion.toString()),
-                showInfo( 'Monedas' , pais.getMoneda.toString()),
+                showInfo( 'Moneda' , pais.getMoneda.toString()),
                 showInfo( 'Area', pais.getArea.toString()),
                 showInfo( 'Gini' , pais.getGini.toString()),
                 showInfo( 'latlng' , pais.getLatlng.toString()),
